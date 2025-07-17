@@ -18,6 +18,7 @@ const populate = {
       },
     },
   },
+  categories: true,
 };
 
 export default (config, { strapi }: { strapi: Core.Strapi }) => {

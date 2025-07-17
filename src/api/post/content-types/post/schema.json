@@ -37,19 +37,16 @@
       "type": "string",
       "required": true
     },
-    "userId": {
-      "type": "biginteger",
-      "unique": true
-    },
-    "categories": {
-      "type": "json",
-      "required": true
-    },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
       "inversedBy": "posts"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }
