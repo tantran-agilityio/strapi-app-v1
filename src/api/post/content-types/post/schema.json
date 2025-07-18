@@ -13,29 +13,29 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "slug": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true,
       "regex": "^[a-z0-9]+(-[a-z0-9]+)*$"
     },
     "coverImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
     },
     "content": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "excerpt": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "author": {
       "type": "relation",
